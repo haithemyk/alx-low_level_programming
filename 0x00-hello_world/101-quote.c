@@ -10,12 +10,12 @@ int main(void)
 putchar('a');
 putchar('n');
 putchar('d');
-putchar(' '); 
+putchar(' ');
 putchar('t');
 putchar('h');
 putchar('a');
 putchar('t');
-putchar(' '); 
+putchar(' ');
 putchar('p');
 putchar('i');
 putchar('e');
@@ -47,6 +47,9 @@ putchar('a');
 putchar(' ');
 putchar('K');
 putchar('o');
+putchar('r');
+putchar('p')
+putchar('a');
 putchar('r');
 putchar(',');
 putchar(' ');
