@@ -40,6 +40,8 @@ putchar('u');
 putchar('l');
 putchar('"');
 putchar(' ');
+putchar('-');
+putchar(' ');
 putchar('D');
 putchar('o');
 putchar('r');
