@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main - will decade if number is positive -negative -null
-*
+* main - will judge if the last digit is greater-less than 6 or equal to 0
 * Return: if the program works perfectly
 */
 int main(void)
