@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/**
+* main - will judge if the last digit is greater-less than 6 or equal to 0
+* Return: if the program works perfectly
+*/
+int main(void)
+{
+for (int i = 97 ; i < 123 ; i++)
+{
+putchar((char) i);
+}
+putchar('\n');
+return (0);
+}
