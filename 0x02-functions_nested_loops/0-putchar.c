@@ -1,7 +1,6 @@
 #include "main.h"
 /**
-* main - will print "_putchar" followed by new line
-* Return: if the program works perfectly
+* putschar - will print "_putchar" followed by new line
 */
 void putschar(void)
 {
@@ -15,6 +14,10 @@ putchar('a');
 putchar('r');
 putchar('\n');
 }
+/**
+* main - will call putschar
+* Return: return 0 if program success
+*/
 int main(void)
 {
 putschar();
