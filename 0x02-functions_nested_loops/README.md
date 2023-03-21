@@ -1,0 +1,1 @@
+Today we will talk about functions in c
