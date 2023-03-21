@@ -1,7 +1,7 @@
 #include<stdio.h>
 #ifndef MAIN_H
 #define MAIN_H
-void _putchar(void)
+void putschar(void)
 {
 putchar('_');
 putchar('p');
