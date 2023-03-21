@@ -7,11 +7,10 @@
 */
 int print_last_digit(int n)
 {
-if (n == INT_MIN)
-n = INT_MAX;
 if (n < 0)
 {
-n = -n;
+unsigned int u = (unsigned int) n;
+n = -(int) u;
 }
 _putchar ((n % 10) + '0');
 return (n % 10);
