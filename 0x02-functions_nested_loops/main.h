@@ -13,4 +13,13 @@ putchar('a');
 putchar('r');
 putchar('\n');
 }
+void print_alphabet(void);
+{
+  int i;
+for(i = 97; i < 123; i++)
+{
+putchar((char) i);
+}
+putchar('\n');
+}
 #endif /* MAIN_H */
