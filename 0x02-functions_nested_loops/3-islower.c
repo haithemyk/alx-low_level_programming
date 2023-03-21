@@ -3,7 +3,8 @@
 * _islower - check if letter is lower case or upper case
 * @c: the character that will be checked
 *
-* Return: if the character is lowercase will return 1 and will return 0 otherwise
+* Return: if the character is lowercase will return 1 or it will return 0
+* otherwise
 */
 int _islower(int c)
 {
