@@ -1,6 +1,19 @@
 #include "main.h"
 /**
-* main - will print alphabets followed by new line
+* print_alphabet - will print alphabet 
+*/
+void print_alphabet(void)
+{
+int i;
+for(i = 97 ; i < 123 ; i++)
+{
+putchar((char) i);
+}
+putchar('\n');
+}
+
+/**
+* main - will call print_alphabet function
 * Return: if the program works perfectly
 */
 int main(void)
