@@ -22,7 +22,7 @@ if (num / 10 > 0)
 _putchar(num / 10 + '0');
 
 _putchar(num % 10 + '0');
-if(j < 9)
+if (j < 9)
 _putchar(',');
 }
 _putchar('\n');
