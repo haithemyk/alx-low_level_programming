@@ -6,13 +6,13 @@ void jack_bauer(void)
 {
 int i;
 int j;
+int first_digit;
+int second_digit;
 for (j = 0 ; j < 23 ; j++)
 {
 for (i = 0 ; i < 59 ; i++)
 {
-int first_digit;
 first_digit = j % 10;
-int second_digit;
 second_digit = j / 10;
 _putchar('0' + second_digit);
 _putchar((char) first_digit + '0');
