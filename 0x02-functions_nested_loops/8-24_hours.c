@@ -1,0 +1,26 @@
+#include "main.h"
+/**
+* jack_bauer - will print time from 00:00 to 23:59
+*/
+void jack_bauer(void)
+{
+int i;
+int j;
+for (j = 0 ; j < 23 ; j++)
+{
+for (i = 0 ; i < 59 ; i++)
+{
+if (j < 10)
+_putchar('0');
+
+_putchar((char) j + '0');
+_putchar(':');
+
+if (i < 10)
+_putchar('0');
+
+_putchar((char) i + '0');
+_putchar('\n');
+}
+}
+}
