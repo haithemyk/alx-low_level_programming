@@ -8,9 +8,9 @@ int i;
 int j;
 int first_digit;
 int second_digit;
-for (j = 0 ; j < 23 ; j++)
+for (j = 0 ; j < 24 ; j++)
 {
-for (i = 0 ; i < 59 ; i++)
+for (i = 0 ; i < 60 ; i++)
 {
 first_digit = j % 10;
 second_digit = j / 10;
