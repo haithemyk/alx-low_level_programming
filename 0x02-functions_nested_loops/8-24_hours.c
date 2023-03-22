@@ -10,16 +10,19 @@ for (j = 0 ; j < 23 ; j++)
 {
 for (i = 0 ; i < 59 ; i++)
 {
-if (j < 10)
-_putchar('0');
-
-_putchar((char) j + '0');
+int first_digit;
+first_digit = j % 10;
+int second_digit;
+second_digit = j / 10;
+_putchar('0' + second_digit);
+_putchar((char) first_digit + '0');
 _putchar(':');
 
-if (i < 10)
-_putchar('0');
+first_digit = i % 10;
+second_digit = i / 10;
+_putchar('0' + second_digit);
+_putchar((char) first_digit + '0');
 
-_putchar((char) i + '0');
 _putchar('\n');
 }
 }
