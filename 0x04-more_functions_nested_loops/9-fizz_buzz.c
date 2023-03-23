@@ -24,12 +24,13 @@ printf("Fizz");
 if (i % 5 == 0)
 printf("Buzz");
 
-if(i % 3 != 0 && i % 5 != 0)
-{   
-if(i > 9)
+if (i % 3 != 0 && i % 5 != 0)
+{
+if (i > 9)
 printf("%d", i / 10);
 printf("%d", i % 10);
 }
+if (i < 100)
 printf(" ");
 }
 printf("\n");
