@@ -1,0 +1,14 @@
+#include "main.h"
+/**
+* print_numbers - print digits from 0-9
+* @n: the number of underscore
+*/
+void print_line(int n)
+{
+int i;
+for (i = 1; i <= n; i++)
+{
+_putchar('_');
+}
+_putchar('\n');
+}
