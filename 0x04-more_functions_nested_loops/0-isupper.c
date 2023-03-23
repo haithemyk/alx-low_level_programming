@@ -8,10 +8,8 @@
 */
 int _isupper(int c)
 {
-if (c < 123 && c > 96)
-return (0);
-else if (c > 64 && c < 91)
+if (c < 91 && c > 64)
 return (1);
 else
-return (-1);
+return (0);
 }
