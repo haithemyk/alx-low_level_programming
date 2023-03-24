@@ -15,7 +15,7 @@ i = 0;
 
 while (i < 10)
 {
-  putchar(i); /* comment out */
+putchar(i); /* comment out */
 }
 
 printf("Infinite loop avoided! \\o/\n");
