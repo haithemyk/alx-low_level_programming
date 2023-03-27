@@ -20,7 +20,7 @@ i = (len / 2 - 1) / 2;
 while (i < len)
 {
 putchar(str[i]);
-i = i + 2;
+i++;
 }
 putchar('\n');
 }
