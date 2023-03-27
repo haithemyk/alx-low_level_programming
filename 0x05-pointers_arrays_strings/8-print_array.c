@@ -8,8 +8,6 @@
 void print_array(int *a, int n)
 {
 int i;
-int len;
-len = sizeof(a) / sizeof(a[0]);
 i = 0;
 while (i < n)
 {
