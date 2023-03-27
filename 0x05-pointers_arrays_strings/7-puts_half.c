@@ -4,7 +4,7 @@
 * puts_half - print string of even indices character
 * @str:the string that will be treated
 */
-void puts2(char *str)
+void puts_half(char *str)
 {
 int i;
 int len;
