@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* print_array - print 
+* print_array - print n elements of array
 * @a:the string that will be treated
 * @n:the number of elements
 */
@@ -16,7 +16,7 @@ if (i == n - 1)
 printf("%d", a[i]);
 break;
 }
-printf("%d, ",a[i]);
+printf("%d, ", a[i]);
 i++;
 }
 putchar('\n');
