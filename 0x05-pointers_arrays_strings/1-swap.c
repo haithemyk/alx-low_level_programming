@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* reset_to_98 - will swap two between two integers
+* swap_int - will swap two between two integers
 * @a:the first integer that will be treated
 * @b:the second //      //   //  // //
 */
