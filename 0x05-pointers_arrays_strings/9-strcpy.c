@@ -2,8 +2,9 @@
 #include <stdio.h>
 /**
 * _strcpy - print n elements of array
-* @a:the string that will be treated
-* @n:the number of elements
+* @dest:the string that will be paste in
+* @src:the string that been copied
+* Return: the new copied string
 */
 char *_strcpy(char *dest, char *src)
 {
