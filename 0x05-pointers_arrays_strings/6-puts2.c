@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* puts2 - print string of even indices character 
+* puts2 - print string of even indices character
 * @str:the string that will be treated
 */
 void puts2(char *str)
