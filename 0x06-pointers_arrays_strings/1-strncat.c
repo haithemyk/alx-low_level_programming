@@ -6,7 +6,7 @@
 * @n:the number of bytes
 * Return:dest string after adding the second string
 */
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
 {
 int len;
 int i;
