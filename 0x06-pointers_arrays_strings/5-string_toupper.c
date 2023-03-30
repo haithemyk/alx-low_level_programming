@@ -4,7 +4,7 @@
 * @a:array that will be treated
 * Return:the result array
 */
-char *string_toupper(char *a);
+char *string_toupper(char *a)
 {
 int i;
 i = 0;
