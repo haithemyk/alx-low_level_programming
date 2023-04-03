@@ -12,8 +12,8 @@ i = 0;
 while (s != NULL)
 {
 if (*(s + i) == c)
-return s;
+return (s + i);
 i++;
 }
-return NULL;
+return (NULL);
 }
