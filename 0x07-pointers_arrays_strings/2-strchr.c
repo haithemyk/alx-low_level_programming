@@ -7,13 +7,14 @@
 */
 char *_strchr(char *s, char c)
 {
-unsigned int i;
-i = 0;
-while (s != NULL)
+while (*s != '\0')
 {
 if (*(s + i) == c)
-return (s + i);
-i++;
+return (s);
+s++;
 }
+if (c == '\0')
+return (s);
+
 return (NULL);
 }
