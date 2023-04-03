@@ -1,0 +1,17 @@
+#include "main.h"
+/**
+* _memcpy - will copy src array to dest array
+* @dest:the array that will be copy the content of src to
+* @src:the array that will copy it
+* @n:the number of cases that we will copy
+* Return: dest array
+*/
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+unsigned int i;
+for (i = 0; i < n; i++)
+{
+*(dest + i) = *(src + i);
+}
+return (dest);
+}
