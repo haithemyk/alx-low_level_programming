@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _memcpy - will copy src array to dest array
+* _memset - will copy src array to dest array
 * @s:the array that will be manipulated
 * @b:the char
 * @n:the number of cases that we will treated
