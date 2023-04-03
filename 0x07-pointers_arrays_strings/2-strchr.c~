@@ -1,0 +1,19 @@
+#include "main.h"
+/**
+* _strchr - will search for char c
+* @s:the array that will be manipulated
+* @c:the char
+* Return: pointer to specefic char
+*/
+char *_strchr(char *s, char c)
+{
+unsigned int i;
+i = 0;
+while (s != NULL)
+{
+if (*(s + i) == b)
+return s;
+i++;
+}
+return NULL;
+}
