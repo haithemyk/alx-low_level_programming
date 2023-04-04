@@ -9,20 +9,15 @@ char *_strpbrk(char *s, char *accept)
 {
 unsigned int i, j;
 char k;
-i = 0;
-while (*(s + i) != '\0')
+char *p;
+while (*s != '\0')
 {
-k = *(s + i);
-j = 0;
-while (*(accept + j) != '\0')
+for (p = accept; *p != '\0'; p++)
 {
-if (*(accept + j) == k)
-break;
-j++;
+if (*s == *p)
+return (s);
 }
-if (*(accept + j) != '\0')
-break;
-i++;
+s++;
 }
-return (s + i);
+return (NULL);
 }
