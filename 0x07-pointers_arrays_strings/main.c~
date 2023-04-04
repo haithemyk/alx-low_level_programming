@@ -10,7 +10,7 @@ int main(void)
 {
     char *s = "ab5645787";
     char *f = "abcd";
-    unsigned int n;
+
 
     s = _strpbrk(s, f);
     printf("%s\n",s );

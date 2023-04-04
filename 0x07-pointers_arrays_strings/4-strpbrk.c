@@ -7,7 +7,7 @@
 */
 char *_strpbrk(char *s, char *accept)
 {
-unsigned int i, j, w;
+unsigned int i, j;
 char k;
 i = 0;
 while (*(s + i) != '\0')
@@ -17,16 +17,12 @@ j = 0;
 while (*(accept + j) != '\0')
 {
 if (*(accept + j) == k)
-{
-w = i;
-i = 99999;
 break;
-}
 j++;
 }
-if (*(accept + j) == '\0')
+if (*(accept + j) != '\0')
 break;
 i++;
 }
-return (s + w);
+return (s + i);
 }
