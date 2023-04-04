@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-    char *s = "abcdef";
+    char *s = "ab5645787";
     char *f = "abcd";
     unsigned int n;
 
-    n = _strspn(s, f);
-    printf("%u\n", n);
+    s = _strpbrk(s, f);
+    printf("%s\n",s );
     return (0);
 }
