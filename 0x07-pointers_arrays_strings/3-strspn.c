@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _strchr - will search for char c
+* _strspn - will match accept with s
 * @s:the array that will be manipulated
 * @accept:the valid characters
 * Return: the segment length
