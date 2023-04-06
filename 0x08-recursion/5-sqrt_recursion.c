@@ -22,11 +22,7 @@ int sqrtr(int n, int guess)
 {
 int new_guess = (guess + n / guess) / 2;
 if (new_guess == guess)
-{
 return (guess);
-}
 else
-{
 return (sqrtr(n, new_guess));
-}
 }
