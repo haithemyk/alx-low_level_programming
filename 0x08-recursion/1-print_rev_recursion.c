@@ -6,13 +6,13 @@
 void _print_rev_recursion(char *s)
 {
 _print_rev_recursion(s + 1);
-if (*s == '\0')
+if (*s != '\0')
 {
-return;
-}
+{
 _putchar(*s);
 if (s == &s[0])
 {
 _putchar('\n');
+}
 }
 }
