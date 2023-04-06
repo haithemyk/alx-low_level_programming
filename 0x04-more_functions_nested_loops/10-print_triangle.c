@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * print_triangle - print left triangle in n lines
-* @n: the number of "\"
+* @size: the number of lines
 */
 void print_triangle(int size)
 {
