@@ -11,7 +11,7 @@ if (*s == '\0')
 return;
 }
 _putchar(*s);
-if (str == &str[0])
+if (s == &s[0])
 {
 _putchar('\n');
 }
