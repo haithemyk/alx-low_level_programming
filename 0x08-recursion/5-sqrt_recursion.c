@@ -20,7 +20,7 @@ return (sqrtr(n, n / 2));
 */
 int sqrtr(int n, int guess)
 {
-int new_guess = (guess + x / guess) / 2.0;
+int new_guess = (guess + n / guess) / 2;
 if (new_guess == guess)
 {
 return (guess);
@@ -30,4 +30,3 @@ else
 return (sqrtr(n, new_guess));
 }
 }
-
