@@ -1,0 +1,25 @@
+#include "main.h"
+/**
+* _strcmp - will compare two strings
+* @s1:first argument
+* @s2:second argument
+* Return:the result in lexicographical order
+*/
+int _strcmp(char *s1, char *s2)
+{
+int j;
+int i;
+int count;
+i = 0;
+j = 0;
+count = 0;
+while (count == 0)
+{
+count = s1[i] - s2[j];
+if (s1[i] == '\0' && s2[j] == '\0')
+break;
+i++;
+j++;
+}
+return (count);
+}
