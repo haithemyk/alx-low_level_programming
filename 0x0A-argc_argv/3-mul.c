@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 {
 int x;
 int y;
+int result;
 if (argc != 3)
 {
 printf("Error");
@@ -18,6 +19,7 @@ return (1);
 }
 x = atoi(argv[1]);
 y = atoi(argv[2]);
-printf("%d\n", x * y);
+result = x * y;
+printf("%d\n", result);
 return (0);
 }
