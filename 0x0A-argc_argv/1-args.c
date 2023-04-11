@@ -1,0 +1,14 @@
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+/**
+* main - will print the first argv element
+* @argc:the size of argv
+* @argv:the arguments of program
+* Return: return 0 means succes
+*/
+int main(int argc, char *argv[])
+{
+printf("%ld\n", (strlen(*argv) * 0)  + argc - 1);
+return (0);
+}
