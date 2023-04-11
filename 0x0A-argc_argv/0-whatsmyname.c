@@ -2,11 +2,12 @@
 #include <stdio.h>
 /**
 * main - will print the first argv element
-* @argv:the elements of arg
+* @argc:the size of argv
+* @argv:the arguments of program
 * Return: return 0 means succes
 */
-int main(char *argv[])
+int main(int argc, char *argv[])
 {
-printf("%s\n", argv[0]);
+printf("%s\n", argv[argc - argc]);
 return (0);
 }
