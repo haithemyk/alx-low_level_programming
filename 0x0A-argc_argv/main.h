@@ -1,5 +1,5 @@
 #include<stdio.h>
 #ifndef MAIN_H
 #define MAIN_H
-int mynameis(char *argv[]);
+int main(char *argv[]);
 #endif /* MAIN_H */
