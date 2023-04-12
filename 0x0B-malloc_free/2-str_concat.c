@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* _strdup - will copy the array s1  and s2 into arr.
+* str_concat - will copy the array s1  and s2 into arr.
 * @s1:the first array
 * @s2:the second array
 * Return: pointer to array
@@ -31,15 +31,14 @@ i++;
 }
 size2 = i;
 }
-
-arr = (char *)  malloc(sizeof(char) * (size1 + size2) + 1);
+arr = (char *)  malloc(sizeof(char) * (size1 + size2) +1);
 if (arr == NULL)
 return (NULL);
 for (i = 0; i <= (size1 + size2); i++)
 {
 if (i < size1 && s1 != NULL)
 arr[i] = s1[i];
-if (i >= size1 && i <= (size1 + size2) && s2 != NULL)
+if (i >= size1 &&i <= (size1 + size2) && s2 != NULL)
 arr[i] = s2[i];
 }
 return (arr);
