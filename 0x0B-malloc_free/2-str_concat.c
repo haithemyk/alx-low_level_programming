@@ -7,7 +7,7 @@
 * @s2:the second array
 * Return: pointer to array
 */
-char *str_concat(char *s1, char *s2);
+char *str_concat(char *s1, char *s2)
 {
 char *arr;
 unsigned int size1;
