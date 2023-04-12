@@ -18,6 +18,7 @@ while (str[i] != '\0')
 {
 i++;
 }
+i++;
 size = i;
 arr = (char *)  malloc(sizeof(char) * size);
 if (arr == NULL)
