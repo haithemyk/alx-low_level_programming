@@ -20,7 +20,6 @@ while (s1[i] != '\0')
 {
 i++;
 }
-i++;
 }
 size1 = i;
 i = 0;
@@ -30,17 +29,17 @@ while (s2[i] != '\0')
 {
 i++;
 }
-i++;
 size2 = i;
 }
-arr = (char *)  malloc(sizeof(char) * (size1 + size2));
+
+arr = (char *)  malloc(sizeof(char) * (size1 + size2) + 1);
 if (arr == NULL)
 return (NULL);
-for (i = 0; i < (size1 + size2); i++)
+for (i = 0; i <= (size1 + size2); i++)
 {
-if (i < size1)
+if (i < size1 && s1 != NULL)
 arr[i] = s1[i];
-if (i >= size1 && i < (size1 + size2))
+if (i >= size1 && i <= (size1 + size2) && s2 != NULL)
 arr[i] = s2[i];
 }
 return (arr);
