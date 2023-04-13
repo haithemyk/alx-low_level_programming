@@ -16,7 +16,7 @@ if (s1 == NULL)
 size1 = 0;
 else   
 size1 = strlen(s1);
-if (s1 == NULL)
+if (s2 == NULL)
 {
 size2 = 0;
 }
@@ -39,5 +39,8 @@ for (i = size1; i < size1 + size2 && j < size2; i++)
 ptr[i] = s2[j];
 j++;
 }
+printf("%ld",sizeof(s1));
+printf("%ld",sizeof(s2));
+printf("%ld",sizeof(ptr));
 return (ptr);
 }
