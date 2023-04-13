@@ -13,7 +13,7 @@ void *ptr;
 if (size == 0 || nmemb == 0)
 return (NULL);
 ptr = malloc(size * nmemb);
-if (ptr == NULL)
-return (NULL);
+if (ptr != NULL)
+memset(ptr, 0, nmemb * size);
 return (ptr);
 }
