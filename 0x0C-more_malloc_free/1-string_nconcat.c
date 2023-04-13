@@ -39,8 +39,6 @@ for (i = size1; i < size1 + size2 && j < size2; i++)
 ptr[i] = s2[j];
 j++;
 }
-printf("%ld",sizeof(s1));
-printf("%ld",sizeof(s2));
-printf("%ld",sizeof(ptr));
+ptr[size1 + size2] = '\0';
 return (ptr);
 }
