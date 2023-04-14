@@ -16,10 +16,10 @@ if (min > max)
 return (NULL);
 ptr = malloc((max - min + 1) * sizeof(int));
 if (ptr == NULL)
-return (NULL); 
+return (NULL);
 for (i = min; i <= max ; i++)
 {
 ptr[i - min] = i;
-}   
+}
 return (ptr);
 }
