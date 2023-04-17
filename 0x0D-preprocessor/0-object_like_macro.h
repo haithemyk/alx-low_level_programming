@@ -1,3 +1,7 @@
-#ifndef OBJECT_LIKE_MACRO_H
+#ifndef MY_HEADER_FILE_H
+#define MY_HEADER_FILE_H
+
 #define SIZE 1024
-#endif
+
+#endif /* MY_HEADER_FILE_H */
+
