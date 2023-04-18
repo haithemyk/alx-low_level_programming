@@ -1,0 +1,1 @@
+hello today we talk about struct
