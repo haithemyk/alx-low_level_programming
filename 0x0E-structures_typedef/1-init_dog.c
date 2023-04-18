@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
 * init_dog - will initialize the paramater of struct dog
-* @d:the pointer of dog struct passed 
+* @d:the pointer of dog struct passed
 * @name: the name of dog as string
 * @owner: the owner of dog as float
 * @age: the age of dog as string
