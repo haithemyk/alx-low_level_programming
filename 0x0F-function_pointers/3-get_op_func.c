@@ -1,14 +1,13 @@
 #include "3-calc.h"
 /**
-* int_index - will call cmp to print array index that match cmp parameter
+* get_op_func - will return the pointer of matched operation s
 * @s: the sign
 * Return:the pointer to opt that match the sign
 */
 int (*get_op_func(char *s))(int, int)
 {
 int i;
-op_t ops[] =
-{
+op_t ops[] = {
 {"+", op_add},
 {"-", op_sub},
 {"*", op_mul},
