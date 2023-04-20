@@ -30,6 +30,6 @@ if (op_ptr == NULL)
 printf("Error\n");
 exit(99);
 }
-printf("%d", op_ptr(a, b));
+printf("%d\n", op_ptr(a, b));
 return (0);
 }
