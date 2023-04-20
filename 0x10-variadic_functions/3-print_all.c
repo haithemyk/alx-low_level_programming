@@ -14,7 +14,7 @@ while (format != NULL && format[i] != '\0')
 {
 switch (format[i])
 {
-case 'd':
+case 'i':
 printf("%d", va_arg(args, int));
 break;
 case 's':
