@@ -14,7 +14,7 @@ int (*op_ptr)(int a, int b);
 if (argc != 4)
 {
 printf("Error/n");
-return (98);
+exit(98);
 }
 a = atoi(argv[1]);
 o = argv[2];
@@ -22,13 +22,13 @@ b = atoi(argv[3]);
 if (b == 0 && (strcmp(o, "/") == 0 || strcmp(o, "%") == 0))
 {
 printf("Error\n");
-return (100);
+exit(100);
 }
 op_ptr = get_op_func(o);
 if (op_ptr == NULL)
 {
 printf("Error\n");
-return (99);
+exit(99);
 }
 printf("%d", op_ptr(a, b));
 return (0);
