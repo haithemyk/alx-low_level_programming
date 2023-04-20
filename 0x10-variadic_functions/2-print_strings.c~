@@ -9,6 +9,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 va_list ap;
 unsigned int i;
 char *new_separator;
+if (n == 0)
+return;
 if (separator == NULL)
 {
 new_separator = malloc(1);
