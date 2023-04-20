@@ -7,38 +7,40 @@ void print_all(const char * const format, ...)
 {
 va_list args;
 char *str;
-unsigned i;
+char *copy_format;
+char *sep;
+copy_format = strdup(format);
+sep = "";
+if (copy_format == NULL)
+return;
 va_start(args, format);
-i = 0;
-while (format != NULL && format[i] != '\0')
+while (*copy_format)
 {
-switch (format[i])
+switch (*copy_format)
 {
 case 'i':
-printf("%d", va_arg(args, int));
+printf("%s%d", sep, va_arg(args, int));
 break;
 case 's':
-str = va_arg(args, char *);
-if (str != NULL)
-{
-printf("%s", str);
-break;
-}
-printf("(nil)");
+str = va_arg(args, char*);
+if (str == NULL)
+str = "(nil)";
+printf("%s%s", sep, str);
 break;
 case 'f':
-printf("%f", va_arg(args, double));
+printf("%s%f", sep, va_arg(args, double));
 break;
 case 'c':
-printf("%c", va_arg(args, int));
+printf("%s%c", sep, va_arg(args, int));
 break;
 default:
-i++;
+copy_format++;
 continue;
 }
-if (format[i + 1] != '\0')
-printf(", ");
+sep = ", ";
+copy_format++;
 }
-printf("\n");
+
+puts("");
 va_end(args);
 }
