@@ -16,8 +16,11 @@ if (separator == NULL)
 new_separator = malloc(1);
 new_separator[0] = '\0';
 }
+else
+{
 new_separator = malloc(strlen(separator) + 1);
 strncpy(new_separator, separator, strlen(separator) + 1);
+}
 va_start(ap, n);
 for (i = 0; i < n; i++)
 {
