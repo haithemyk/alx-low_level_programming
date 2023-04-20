@@ -1,0 +1,1 @@
+hello this when we will use functions with infinitif paramaters
