@@ -6,7 +6,7 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *ptr, *traversal;
+	list_t *ptr;
 	ptr = malloc(sizeof(list_t));
 	ptr->str = strdup(str);
 	ptr->len = strlen(str);
@@ -18,11 +18,7 @@ list_t *add_node(list_t **head, const char *str)
 		*head = ptr;
 		return (ptr);
 	}
-	traversal = *head;
-	while (traversal->next != NULL)
-	{
-		traversal = traversal->next;
-	}
-	traversal->next = ptr;
+	ptr->next = *head;
+	*head = ptr;
 	return (ptr);
 }
