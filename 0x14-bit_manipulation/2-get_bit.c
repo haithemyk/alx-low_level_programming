@@ -1,7 +1,9 @@
 #include "main.h"
 /**
-* print_binary - print binary number.
-* @n:the integer that will be treated.
+* get_bit - get bit at certain index
+* @index: the index of wanted bit
+* @n: the number that will be treated
+* Return:the bit
 */
 int get_bit(unsigned long int n, unsigned int index)
 {
