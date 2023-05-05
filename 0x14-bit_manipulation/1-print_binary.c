@@ -11,7 +11,7 @@ while (curr != 0)
 {
 	while (curr > 1)
 		curr -= 2;
-	_putchar(curr);
+	_putchar(curr - '0');
 	curr = n >> 1;
 }
 }
