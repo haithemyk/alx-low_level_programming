@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
 * binary_to_uint - convert binary string to unsigned base 10 int.
 * @b:the string that will be treated.
