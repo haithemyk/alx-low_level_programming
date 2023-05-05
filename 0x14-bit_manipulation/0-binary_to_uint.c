@@ -11,7 +11,6 @@ int i;
 i = 0;
 while (b[i] != '\0')
 	i++;
-printf("i =[%d]", i);
 i -= 1;
 sum = 0;
 pow = 1;
