@@ -5,13 +5,34 @@
 */
 void print_binary(unsigned long int n)
 {
-unsigned int curr;
-curr = n;
-while (curr != 0)
+unsigned int shift, times, cp_times, border;
+shift = n;
+
+if (shift == 0)
 {
-	while (curr > 1)
-		curr -= 2;
-	_putchar(curr - '0');
-	curr = n >> 1;
+	_putchar('0');
+	return;
 }
+times = 0;
+while (shift != 1)
+{
+	shift = shift >> 1;
+	times++;
+}
+border = 0;
+while (times + 1 != border)
+{
+	cp_times = times;
+	shift = n;
+	while (cp_times != border)
+	{
+		shift = shift >> 1;
+		cp_times--;
+	}
+	while (shift > 1)
+		shift -= 2;
+	_putchar(shift + '0');
+	border++;
+}
+puts("");
 }
