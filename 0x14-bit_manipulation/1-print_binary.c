@@ -11,7 +11,7 @@ shift = n;
 if (shift == 0)
 {
 	_putchar('0');
-	return;
+	exit();
 }
 times = 0;
 while (shift != 1)
