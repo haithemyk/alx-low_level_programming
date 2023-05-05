@@ -5,24 +5,19 @@
 */
 int get_bit(unsigned long int n, unsigned int index)
 {
-unsigned int cp_shift, us_indx;
-int i;
-unsigned long int shift;
+unsigned int us_indx;
+unsigned long int shift, curr;
 shift = n;
-i = 0;
 us_indx = 0;
-while (shift != 0)
+while (us_indx != index + 1)
 {
-	cp_shift = shift;
-	while (cp_shift > 1)
-		cp_shift -= 2;
-	shift = shift >> 1;
-	if (us_indx == index)
-		break;
-	else if (us_indx != index && shift == 0)
+	if (shift == 0)
 		return (-1);
-	i++;
+	curr = shift;
+	while (curr > 1)
+		curr -= 2;
+	shift = shift >> 1;
 	us_indx++;
 }
-return (cp_shift);
+return (curr);
 }
