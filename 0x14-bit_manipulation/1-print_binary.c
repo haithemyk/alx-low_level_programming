@@ -34,5 +34,4 @@ while (times + 1 != border)
 	_putchar(shift + '0');
 	border++;
 }
-puts("");
 }
